@@ -7,7 +7,7 @@
   * @requires IMDebugger (optional)
   * @description finds if supplied parameter is a HTMLElement
  **/
-function isHTMLElement(elem){
+var isHTMLElement = function(elem){
     var hasHTMLElement = false;
     try {
         if(HTMLElement !== undefined) { hasHTMLElement = true;}
@@ -33,4 +33,4 @@ function isHTMLElement(elem){
             (new IMDebugger()).pass("isHTMLElement must be supplied something.");
         } else {
             console.log("isHTMLElement must be supplied something."); }
-        return false; }}
+        return false; }};
